@@ -5,8 +5,8 @@ import pandas as pd
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from sklearn.metrics import mean_squared_error
 from openai import OpenAI
-import matplotlib.pyplot as plt
 
+OPENAI_API_KEY=st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] =OPENAI_API_KEY
 # # Load data
 # def load_data(file):
